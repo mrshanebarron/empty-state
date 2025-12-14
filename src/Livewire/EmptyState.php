@@ -6,20 +6,15 @@ use Livewire\Component;
 
 class EmptyState extends Component
 {
-    public string $title = 'No data found';
-    public string $description = '';
-    public string $icon = 'inbox';
+    public ?string $title = null;
+    public ?string $description = null;
+    public ?string $icon = null;
     public ?string $actionLabel = null;
     public ?string $actionUrl = null;
 
-    public function mount(
-        string $title = 'No data found',
-        string $description = '',
-        string $icon = 'inbox',
-        ?string $actionLabel = null,
-        ?string $actionUrl = null
-    ): void {
-        $this->title = $title;
+    public function mount(?string $title = null, ?string $description = null, ?string $icon = null, ?string $actionLabel = null, ?string $actionUrl = null): void
+    {
+        $this->title = $title ?? 'No data found';
         $this->description = $description;
         $this->icon = $icon;
         $this->actionLabel = $actionLabel;

@@ -1,30 +1,12 @@
 {
     "name": "mrshanebarron/empty-state",
-    "description": "Empty state component for Laravel",
-    "keywords": ["laravel", "empty", "state", "placeholder", "livewire", "vue"],
+    "description": "Empty state placeholder component for Laravel - supports Livewire and Vue",
+    "keywords": ["laravel", "livewire", "vue", "empty-state", "placeholder", "no-data"],
     "license": "MIT",
     "authors": [{"name": "Shane Barron", "email": "mrshanebarron@gmail.com"}],
-    "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.0|^11.0|^12.0",
-        "livewire/livewire": "^3.0"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^8.0|^9.0",
-        "pestphp/pest": "^2.0"
-    },
-    "autoload": {
-        "psr-4": {"LaravelDesign\\empty-state\\": "src/"}
-    },
-    "autoload-dev": {
-        "psr-4": {"LaravelDesign\\empty-state\\Tests\\": "tests/"}
-    },
-    "extra": {
-        "laravel": {
-            "providers": ["LaravelDesign\\empty-state\\empty-stateServiceProvider"]
-        }
-    },
-    "config": {"sort-packages": true},
+    "require": {"php": "^8.1", "illuminate/support": "^10.0|^11.0|^12.0"},
+    "autoload": {"psr-4": {"MrShaneBarron\\EmptyState\\": "src/"}},
+    "extra": {"laravel": {"providers": ["MrShaneBarron\\EmptyState\\EmptyStateServiceProvider"]}},
     "minimum-stability": "stable",
     "prefer-stable": true
 }
