@@ -23,6 +23,6 @@ class EmptyState extends Component
 
     public function render()
     {
-        return view('ld-empty-state::livewire.empty-state');
+        return view('sb-empty-state::livewire.empty-state');
     }
 }

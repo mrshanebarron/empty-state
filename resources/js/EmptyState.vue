@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'LdEmptyState',
+  name: 'SbEmptyState',
   props: {
     title: { type: String, default: 'No data found' },
     description: { type: String, default: null },
